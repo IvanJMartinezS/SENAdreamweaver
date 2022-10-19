@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Autos</title>
+<style type="text/css">
+#contenedor {
+    position: relative;
+    height: 557px;
+    width: 100%;
+    left: 0;
+	background: linear-gradient(220.55deg, #FFE70B 0%, #27B643 100%);
+	text-align: center;
+}
+#encabezado {
+    position: absolute;
+    height: 205px;
+    width: 857px;
+    left: 20px;
+    top: 20px;
+}
+#menu {
+    position: absolute;
+    height: 414;
+    width: 265px;
+    left: 20px;
+    top: 125px;
+}
+#contenido {
+    position: absolute;
+    height: 414px;
+    width: 593px;
+    left: 285px;
+    top: 125px;
+}
+#galeria {
+    margin: auto;
+    height: 100px;
+    width: 593px;
+	text-align: center;
+}
+#contenedorGaleria {
+    height: 210px;
+    width: 593px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+#carro1 {
+    height: 210px;
+    width: 593px;
+    position: absolute;
+    visibility: hidden;
+	text-align: center;
+	margin-top: 10px;
+}
+#carro2 {
+    height: 210px;
+    width: 593px;
+    position: absolute;
+    visibility: hidden;
+	text-align: center;
+	margin-top: 10px;
+}
+#carro3 {
+    height: 210px;
+    width: 593px;
+    position: absolute;
+    visibility: hidden;
+	text-align: center;
+	margin-top: 10px;
+}
+#carro4 {
+    height: 210px;
+    width: 593px;
+    position: absolute;
+    visibility: hidden;
+	text-align: center;
+	margin-top: 10px;
+}
+</style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div id="contenedor">
+  <div id="encabezado"><h1 style="color: blue">Renta de Autos Nuevos y Usados</h1></div>
+  <div id="menu"><h1>Menu Principal</h1><ul>
+	  <li style="font-size: 20px"><a href="index.html">Inicio</a></li>
+		<li style="font-size: 20px"><a href="contacto.html">Contacto</a></li>
+	  </ul></div>
+  <div id="contenido">
+    <div id="galeria">
+		<img src="images/01.jpg" alt="" width="135" height="100" onMouseOver="MM_showHideLayers('carro1','','show')" onMouseOut="MM_showHideLayers('carro1','','hide')"/>
+		<img src="images/02.jpg" alt="" width="135" height="100" onMouseOver="MM_showHideLayers('carro2','','show')" onMouseOut="MM_showHideLayers('carro2','','hide')"/>
+		<img src="images/03.jpg" alt="" width="135" height="100" onMouseOver="MM_showHideLayers('carro3','','show')" onMouseOut="MM_showHideLayers('carro3','','hide')"/>
+		<img src="images/04.jpg" alt="" width="135" height="100" onMouseOver="MM_showHideLayers('carro4','','show')" onMouseOut="MM_showHideLayers('carro4','','hide')"/>
+	  </div>
+    <div id="contenedorGaleria">
+      <div id="carro1"><img src="images/01.jpg" alt="" width="400" height="300"/>
+	</div>
+		<div id="carro2"><img src="images/02.jpg" alt="" width="400" height="300"/>
+	</div>
+		<div id="carro3"><img src="images/03.jpg" alt="" width="400" height="300"/>
+	</div>
+		<div id="carro4"><img src="images/04.jpg" alt="" width="400" height=300"/>
+	</div>
+		</div>
+		
+	  </div>
+		  
+</div>
+	
+	
+</body>
+</html>
