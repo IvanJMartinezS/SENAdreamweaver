@@ -1,65 +1,196 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Automoviles</title>
-<style type="text/css">
-#contenedor {
-    position: relative;
-    height: 557px;
-    width: 100%;
-    left: 0;
-	background: linear-gradient(220.55deg, #FFE70B 0%, #27B643 100%);
-	text-align: center;
-}
-#encabezado {
-    position: absolute;
-    height: 104px;
-    width: 857px;
-    left: 20px;
-    top: 20px;
-}
-#menu {
-    position: absolute;
-    height: 414px;
-    width: 265px;
-    left: 20px;
-    top: 125px;
-}
-#contenido {
-    position: absolute;
-    height: 414px;
-    width: 593px;
-    left: 285px;
-    top: 125px;
-}
-
-</style>
-</head>
-
-<body>
-<div id="contenedor">
-	<div id="encabezado"><h1 style="color: blue">Renta de Autos Nuevos y Usados</h1></div>
-  <div id="menu"><h1>Menu Principal</h1>
-	<ul>
-		<li style="font-size: 20px"><a href="autos.html">Autos</a></li>
-		<li style="font-size: 20px"><a href="contacto.html">Contacto</a></li>
-    </ul>
-	</div>
-  <div id="contenido">
-    <div id="contenido1"><h1 style="text-shadow: -10px 5px 3px red;">Alquileres Flexibles</h1>
-	  <p>La mayoría de las reservas se pueden cancelar o cambiar gratis hasta 48 horas antes de la recogida.</p>
-	  </div>
-	  <div id="contenido2"><h1 style="text-shadow: -10px 5px 3px red;">Sin Cargos Ocultos</h1>
-	  <p>Sabes qué pagas exactamente y Cuanto pagas.</p>
-	  </div>
-	  <div id="contenido3"><h1 style="text-shadow: -10px 5px 3px red;">Igualamos el Precio</h1>
-	  <p>¿Has visto la misma oferta a un precio más bajo? Nosotros la igualamos.</p>
-	  </div>
-  </div>
-  
-</div>
-	
-	
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alquiler de Autos</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html" style="color: #008001">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="index.html" style="color: #008001">Inicio <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="autos.html" style="color: #008001">Autos</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="contacto.html" style="color: #008001">Contacto</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #008001"> Servicios </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #002611">
+              <a class="dropdown-item" href="mantenimiento.html" style="background-color: #00CB4E; color: #002611">Mantenimiento</a> <a class="dropdown-item" href="montallantas.html" style="background-color: #00CB4E; color: #002611">Montallantas</a>
+			  <a class="dropdown-item" href="alineacion.html" style="background-color: #00CB4E; color: #002611">Alineación</a>
+			  <a class="dropdown-item" href="balanceo.html" style="background-color: #00CB4E; color: #002611">Balanceo</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+    <header>
+      <div class="jumbotron" style="background-color: #002611">
+        <div class="container">
+          <div class="row">
+            <div class="col-12" style="background-color: #00CB4E">
+              <h1 class="text-center">Renta de Automóviles</h1>
+              <p class="text-center">Somos una empresa lider en la renta de automóviles</p>
+              <p>&nbsp;</p>
+              <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Contactanos</a> </p>
+            </div>
+          </div>
+        </div>	
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-4 mt-2 text-center">
+            <h2>Acerca de Nosotros</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/dolar.png" data-holder-rendered="true">
+            <h3>Alquileres Flexibles</h3>
+            <p>La mayoría de las reservas se pueden cancelar o cambiar gratis hasta 48 horas antes de la recogida.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/oculto.png" data-holder-rendered="true">
+            <h3>Sin Cargos Ocultos</h3>
+            <p>Sabes qué pagas exactamente y Cuanto pagas.</p>
+          </div>
+			
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/igual.png" data-holder-rendered="true">
+            <h3>Igualamos el Precio</h3>
+            <p>¿Has visto la misma oferta a un precio más bajo? Nosotros la igualamos.</p>
+          </div>
+          
+        </div>
+        
+      <div class="jumbotron" style="background-color: #00CB4E">
+		  <div class="col-sm-12 mt-4 mb-2 text-center">
+            <h2 style="color: white">Testimonios</h2>
+          </div>
+        <div class="container">
+          	<div class="row">
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-6">
+            <blockquote class="blockquote">
+              <p class="mb-0">La atención es muy buena, muy amables y el precio fue muy bajo.</p>
+              <small class="blockquote-footer" style="color: white"><cite title="Source Title">Mario Benedetti </cite></small> 
+            </blockquote>
+          </div>
+          <div class="col-sm-6 col-lg-6">
+            <blockquote class="blockquote">
+              <p class="mb-0">Me rentaron un super auto a un precio mas bajo que cualquier otro alquiler de autos.</p>
+              <small class="blockquote-footer" style="color: white"> <cite title="Source Title">Jorge Luis Borges</cite></small> 
+            </blockquote>
+          </div>
+          <div class="col-sm-6 col-lg-6">
+            <blockquote class="blockquote">
+              <p class="mb-0">Buenos precios y los autos practicamente nuevos, funcionando bien.</p>
+              <small class="blockquote-footer" style="color: white"><cite title="Source Title">Julio Cortázar</cite></small> 
+            </blockquote>
+          </div>	
+          <div class="col-sm-6 col-lg-6">
+            <blockquote class="blockquote">
+              <p class="mb-0">Cada año vengo de vacaciones y fijo me rentan el auto que necesito al mejor precio.</p>
+              <small class="blockquote-footer" style="color: white"><cite title="Source Title">Pablo Neruda</cite></small> 
+            </blockquote>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-2 text-center">
+            <h2>Nuestros Servicios</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <h3>Mantenimiento</h3>
+            <p> Cambio de aceite, cambio del liquido de transmisión, lubricación de engranajes, cambio de líquido de frenos y mantenimiento de la dirección asistida.
+            <p><a class="btn btn-link" href="mantenimiento.html">View details »</a></p>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <h3>Montallantas</h3>
+            <p> Tenemos servicio de montallantas al instante, rápido y efectivo a buen precio. Te llevamos el servicio a casa, si lo necesitas.
+            <p><a class="btn btn-link" href="montallantas.html">View details »</a></p>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <h3>Alineación</h3>
+            <p>Nos aseguramos de que tus llantas estén alineadas y paralelas como debe ser, tenemos equipo especializado para la verificación.</p>
+            <p><a class="btn btn-link" href="alineacion.html">View details »</a></p>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <h3>Balanceo</h3>
+            <p> <em class="icon-desktop "></em>Contamos con tecnología para un análisis rápido y eficiente del balanceo de su auto, garantizando la vida útil de cada llanta.</p>
+            <p><a class="btn btn-link" href="balanceo.html">View details »</a></p>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 mx-auto" style="background-color: #002611">
+          <div class="jumbotron" style="background-color: #00CB4E">
+            <div class="row text-center">
+              <div class="text-center col-12">
+                <h2 style="color: white">Solicite una Cotización Gratis</h2>
+              </div>
+              <div class="text-center col-12">
+                <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
+                <form id="feedbackForm" class="text-center">
+                  <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" aria-describedby="nameHelp">
+                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Correo</label><input type="email" class="form-control" id="email" name="email" placeholder="Direcccón de correo electrónico" aria-describedby="emailHelp">
+                    <span id="emailHelp" class="form-text text-muted" style="display: none;">Por favor ingrese un correo valido.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Mensaje" aria-describedby="messageHelp"></textarea>
+                    <span id="messageHelp" class="form-text text-muted" style="display: none;">Por favor ingrese un mensaje.</span>
+                  </div>
+                  <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg"> Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Iván Martínez. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
 </html>
